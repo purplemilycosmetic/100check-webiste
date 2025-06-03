@@ -6,6 +6,7 @@ import PlanView from './views/PlanView.vue'
 import NewsView from './views/NewsView.vue'
 import AboutView from './views/AboutView.vue'
 import Loginview from './views/Loginview.vue' 
+import Loginview from './views/RegisterView.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -15,7 +16,7 @@ const routes = [
   { path: '/NewsView', component: NewsView },
   { path: '/AboutView', component: AboutView },
   { path: '/LoginView', component: Loginview },
-  { path: '/register', component: () => import('./views/Register.vue') }, 
+  { path: '/RegisterView', component: () => import('./views/RegisterView.vue') }, 
   { path: '/ForgetPassword', component: () => import('./views/ForgetPassword.vue') } 
 ]
 const router = createRouter({
